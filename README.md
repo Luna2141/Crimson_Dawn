@@ -1,6 +1,6 @@
 # Crimson Project
 
-This projects main focus is end user security and to help bridge the gap between web2.0 and web3.0 by offering a breath of fresh air and allowing on-Chain password management for your hot wallets and general use web2.0 accounts. 
+This projects main focus is end user security and to help bridge the gap between web2.0 and web3.0 by offering a breath of fresh air and allowing on-Chain password management for your general use web2 accounts in a similar fashion as a yubi key, but web3! 
 
 # This is a WIP and is subject to change as development furthers
 
