@@ -1,18 +1,5 @@
 use yew::prelude::*;
 
-#[macro_use]
-extern crate rocket;
-
-#[get("/")]
-fn index() -> &'static str {
-    "Hello, world!"
-}
-
-#[launch]
-fn rocket() -> _ {
-    rocket::build().mount("/", routes![index])
-}
-
 #[function_component]
 fn App() -> Html {
     let counter = use_state(|| 0);
@@ -26,12 +13,12 @@ fn App() -> Html {
 
     html! {
         <div>
-            <button onclick=onclick>{ "+1" }</button>
+            <button {onclick}>{ "+1" }</button>
             <p>{ *counter }</p>
         </div>
     }
 }
 
 fn main() {
-    yew::start_app::<App>();
+    yew::Renderer::<App>::new().render();
 }
